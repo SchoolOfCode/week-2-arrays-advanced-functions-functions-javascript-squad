@@ -11,3 +11,19 @@ function greetNames(callback, name1, name2, name3) {
 }
 
 greetNames(greeting, "Kit", "Chris", "Carmen")
+
+let productsArray = [
+    {
+      product: 'Shoes',
+      price: 25
+    },
+    {
+      product: 'Hat',
+      price: 5
+    }
+  ]
+
+  const newProductArray = productsArray.map(({price}) => price * 1.2);
+
+console.log(newProductArray);
+console.log(productsArray);
